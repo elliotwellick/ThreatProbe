@@ -14,7 +14,7 @@ Make sure you have Python installed on your system.
 Execute the script by running:
 
 
-    'python threatprobe.py <URL>'
+    python threatprobe.py <URL>
 
 Replace <URL> with the URL you want to test for vulnerabilities. For example:
 
