@@ -16,11 +16,6 @@ Execute the script by running:
 
     python threatprobe.py <URL>
 
-Replace <URL> with the URL you want to test for vulnerabilities. For example:
-
-
-    python threatprobe.py https://www.example.com
-
 The script will perform the vulnerability checks and display the results.
 
 ## Disclaimer
