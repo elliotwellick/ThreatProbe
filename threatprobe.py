@@ -28,6 +28,11 @@ def check_vulns(url):
     if "root:" in resp.text:
         vulns.append("File inclusion")
 
+    payload = "command_to_execute; echo vulnerable"
+    resp = requests.get(url + "/execute?cmd=" + payload, verify=False)
+    if "vulnerable" in resp.text:
+        vulns.append("RCE")
+
     return vulns
 
 parser = argparse.ArgumentParser(description='Check for vulnerabilities in a URL.')
